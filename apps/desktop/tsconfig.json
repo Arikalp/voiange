@@ -1,0 +1,14 @@
+{
+  "extends": "../../config/typescript/base.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "jsx": "react-jsx",
+    "paths": {
+      "@/*": ["src/renderer/src/*"],
+      "@main/*": ["src/main/*"],
+      "@preload/*": ["src/preload/*"]
+    },
+    "types": ["node"]
+  },
+  "include": ["src", "electron.vite.config.ts", "tailwind.config.ts"]
+}
