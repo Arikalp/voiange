@@ -1,10 +1,18 @@
 # VoiceAI Backend
 
-Python runtime for local AI and audio workloads:
+FastAPI backend service for VoiceAI Studio.
 
-- RVC training
-- RVC inference
-- Demucs separation
-- FFmpeg processing
-- hardware detection
-- job execution
+## Modules
+
+- GPU Detector
+- Model Manager
+- Dataset Manager
+- Training Manager
+- Inference Manager
+- Audio Processing Manager
+
+## Run
+
+```bash
+uvicorn voiceai_backend.main:app --reload
+```
